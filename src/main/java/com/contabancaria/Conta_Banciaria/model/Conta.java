@@ -2,6 +2,8 @@ package com.contabancaria.Conta_Banciaria.model;
 
 import java.io.Serializable;
 
+import com.contabancaria.Conta_Banciaria.enums.ContaStatus;
+
 import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Inheritance;
@@ -26,5 +28,6 @@ public abstract class Conta implements Serializable{
     private String numeroConta;
     private double saldo;
     private int pin;
+    private ContaStatus estado;
     
 }
