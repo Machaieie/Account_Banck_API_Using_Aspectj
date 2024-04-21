@@ -15,5 +15,5 @@ public interface ContaInterface <T>{
     // Método para excluir uma conta do banco de dados
     void excluirConta(Long id);
 
-     void alterarPin(int pin);
+     void alterarPin(int pin,T conta);
 }

@@ -9,5 +9,5 @@ import com.contabancaria.Conta_Banciaria.model.ContaPoupanca;
 
 @Repository
 public interface ContaPoupancaRepository  extends JpaRepository<ContaPoupanca,Long>{
-    Optional<ContaPoupanca> findByNumeroConta ();
+    Optional<ContaPoupanca> findByNumeroConta (String numeroConta);
 }

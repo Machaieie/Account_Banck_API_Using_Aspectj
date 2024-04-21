@@ -10,7 +10,7 @@ import com.contabancaria.Conta_Banciaria.model.ContaInvestimento;
 @Repository
 public interface ContaInvestimentoRepository extends JpaRepository<ContaInvestimento,Long> {
 
-    Optional<ContaInvestimento> findByNumeroConta ();
+    Optional<ContaInvestimento> findByNumeroConta (String numeroConta);
     
   
 }

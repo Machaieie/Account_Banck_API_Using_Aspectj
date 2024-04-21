@@ -1,8 +1,8 @@
 package com.contabancaria.Conta_Banciaria.interfaces;
 
-public interface OperacoesInterface {
-    void depositar(Long idConta, double valor);
-    void levantar(Long idConta, double valor, int pin);
-    void transferir(Long idContaOrigem, Long idContaDestino, double valor, int pin);
-    double veriricarSaldo(Long idConta, int pin);
+public interface OperacoesInterface<T> {
+    void depositar(T conta, double valor);
+    void levantar(T conta, double valor, int pin);
+    void transferir(T conta, T contaDestino, double valor, int pin);
+    double veriricarSaldo(T conta, int pin);
 }
